@@ -7,8 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: do-a-thing
-        run: echo "doing a thing!!"
+      - name: publish
+        working-directory: cool_library
+        run: sbt publish
 
 
 
