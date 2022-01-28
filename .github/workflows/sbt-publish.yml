@@ -1,12 +1,14 @@
 name: "Publish to GitHub Packages"
 on: [push]
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 jobs:
-    publish-to-gh-packages:
-        runs-on: ubuntu-latest
-        steps:
-          - uses: actions/checkout@v2
-          - name: do-a-thing
-            run: echo "doing a thing!!"
+  publish-to-gh-packages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: do-a-thing
+        run: echo "doing a thing!!"
 
 
 
