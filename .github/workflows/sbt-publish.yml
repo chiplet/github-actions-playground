@@ -1,0 +1,12 @@
+name: "Publish to GitHub Packages"
+on: [push]
+jobs:
+    publish-to-gh-packages:
+        runs-on: ubuntu-latest
+        steps:
+          - uses: actions/checkout@v2
+          - name: do-a-thing
+            run: echo "doing a thing!!"
+
+
+
